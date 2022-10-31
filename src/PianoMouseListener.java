@@ -9,6 +9,7 @@ import java.util.*;
 public class PianoMouseListener extends MouseAdapter {
 	// You are free to add more instance variables if you wish.
 	private List<Key> _keys;
+	private Key _key;
 
 	/**
 	 * @param keys the list of keys in the piano.
@@ -25,6 +26,24 @@ public class PianoMouseListener extends MouseAdapter {
 	 * of the entire piano, of where the mouse is currently located.
 	 */
 	public void mouseDragged (MouseEvent e) {
+		/* for (Key key : _keys) {
+			if (key.getPolygon().contains(e.getX(), e.getY())) {
+				_key = key;
+				key.play(true);
+			} else {
+				key.play(false);
+			}
+		} */
+		for (Key key : _keys) {
+			if (!key.equals(_key)) {
+				if (key.getPolygon().contains(e.getX(), e.getY())) {
+					_key = key;
+					key.play(true);
+				} else {
+					key.play(false);
+				}
+			}
+		}
 	}
 
 	// TODO implement this method.
@@ -39,6 +58,10 @@ public class PianoMouseListener extends MouseAdapter {
 		//	if (key.getPolygon().contains(e.getX(), e.getY())) {
 		// To turn a key "on", you could then write:
 		//      key.play(true);  // Note that the key should eventually be turned off!
+
+		for (Key key : _keys)
+			if (key.getPolygon().contains(e.getX(), e.getY()))
+				key.play(true);
 	}
 
 	// TODO implement this method.
@@ -49,5 +72,8 @@ public class PianoMouseListener extends MouseAdapter {
 	 * of the entire piano, of where the mouse is currently located.
 	 */
 	public void mouseReleased (MouseEvent e) {
+		for (Key key : _keys)
+			if (key.getPolygon().contains(e.getX(), e.getY()))
+				key.play(false);
 	}
 }

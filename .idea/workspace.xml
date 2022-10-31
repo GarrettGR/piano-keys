@@ -7,14 +7,30 @@
     <list default="true" id="53f64dba-0bf6-41d5-82e2-6aebc2da2696" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ggr-piano-keybaord.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ggr-piano-keybaord.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Key.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Piano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Piano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PianoMouseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PianoMouseListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Band.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -27,21 +43,29 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "com.google.cloudcode.ide_session_index": "20221026_0001",
+    "com.google.cloudcode.ide_session_index": "20221031_0001",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "C:/Users/Garrett GR/IdeaProjects/ggr-piano-keybaord/src",
+    "last_opened_file_path": "C:/Users/Garrett GR/Downloads/junit-jupiter-api-5.9.1.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
@@ -49,8 +73,14 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Garrett GR\IdeaProjects\ggr-piano-keybaord\src" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Band">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -89,9 +119,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PianoTester.testClickUpperLeftMostPixel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ggr-piano-keybaord" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PianoTester" />
+      <option name="METHOD_NAME" value="testClickUpperLeftMostPixel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PianoTester.testDragWithinKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ggr-piano-keybaord" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PianoTester" />
+      <option name="METHOD_NAME" value="testDragWithinKey" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Band" />
+        <item itemvalue="JUnit.PianoTester.testDragWithinKey" />
+        <item itemvalue="JUnit.PianoTester.testClickUpperLeftMostPixel" />
       </list>
     </recent_temporary>
   </component>
@@ -103,7 +155,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666820985001</updated>
-      <workItem from="1666820986997" duration="2858000" />
+      <workItem from="1666820986997" duration="15408000" />
+      <workItem from="1667185979927" duration="1396000" />
+      <workItem from="1667239214199" duration="4056000" />
     </task>
     <task id="LOCAL-00001" summary="creating project for the piano keys">
       <created>1666821353185</created>
@@ -112,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666821353185</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding dependencies for JUnit to the project">
+      <created>1666834657636</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666834657636</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adding dependencies for JUnit to the project">
+      <created>1666834709598</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666834709598</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +188,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating project for the piano keys" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating project for the piano keys" />
+    <MESSAGE value="adding dependencies for JUnit to the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding dependencies for JUnit to the project" />
   </component>
 </project>

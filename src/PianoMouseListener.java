@@ -35,6 +35,8 @@ public class PianoMouseListener extends MouseAdapter {
 			}
 		} */
 		for (Key key : _keys) {
+			if(e.getX() < 0 || e.getY() < 0 || e.getX() > 840 || e.getY() > 200)
+				key.play(false);
 			if (!key.equals(_key)) {
 				if (key.getPolygon().contains(e.getX(), e.getY())) {
 					_key = key;

@@ -26,14 +26,6 @@ public class PianoMouseListener extends MouseAdapter {
 	 * of the entire piano, of where the mouse is currently located.
 	 */
 	public void mouseDragged (MouseEvent e) {
-		/* for (Key key : _keys) {
-			if (key.getPolygon().contains(e.getX(), e.getY())) {
-				_key = key;
-				key.play(true);
-			} else {
-				key.play(false);
-			}
-		} */
 		for (Key key : _keys) {
 			if(e.getX() < 0 || e.getY() < 0 || e.getX() > 840 || e.getY() > 200)
 				key.play(false);
